@@ -104,39 +104,16 @@
       "blocks": {
         "row_FxDh9k": {
           "type": "row",
+          "source": "{{ product.metafields.custom.multi_row.value }}",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_bL33cA": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_JMtG4h": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "image": "{{ product.metafields.custom.multi_row.value.image.value }}",
+            "caption": "{{ product.metafields.custom.multi_row.value.title.value }}",
+            "text": "{{ product.metafields.custom.multi_row.value.description | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "row_FxDh9k",
-        "row_bL33cA",
-        "row_JMtG4h"
+        "row_FxDh9k"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
